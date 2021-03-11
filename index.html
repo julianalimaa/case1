@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Lenscope</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Conheça a melhor lente para você:</h1>
+    <form id="dadosReceita">
+        <div class="tipoGrau">
+            <label for="esfericoEsquerdo">Grau Esférico - Olho Esquerdo</label>
+            <input class ="grauEsferico" id="esfericoEsquerdo" type="number" step="0.01" placeholder="grau esférico do olho esquerdo">
+            <label for="esfericoDireito">Grau Esférico - Olho Direito</label>
+            <input class="grauEsferico" id="esfericoDireito" type="number" step="0.01" placeholder="grau esférico do olho direito">
+        </div>
+        <div class="tipoGrau">
+            <label for="cilindricoEsquerdo">Grau Cilíndrico - Olho Esquerdo</label>
+            <input class="grauCilindrico" id="cilindricoEsquerdo" type="number" step="0.01" placeholder="grau cilíndrico do olho esquerdo">
+            <label for="cilindricoDireito">Grau Cilíndrico - Olho Direito</label>
+            <input class="grauCilindrico" id="cilindricoDireito" type="number" step="0.01" placeholder="grau cilíndrico do olho direito">
+        </div>    
+        <button id="lenteIndicada" value="Enviar">Descubra sua lente</button>
+    </form>
+    <h2 class="tituloSecundario">Nossas lentes são: </h2>
+    <div class="produtos">        
+        <div class="modeloProduto" id="prime">
+            <h3>Lente Prime</h3>
+            <img src="lente.jpg" alt="Óculos">
+        </div>
+        <div class="modeloProduto" id="vision" >
+            <h3>Lente Vision</h3>
+            <img src="lente.jpg" alt="Óculos">
+        </div> 
+    </div>
+    <script src="validaDados.js"></script>
+    <script src="defineLente.js"></script>
+    <script src="verificaPrime.js"></script>
+    <script src="verificaVision.js"></script>
+</body>
+</html>

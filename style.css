@@ -1,0 +1,44 @@
+body{
+    width: auto;
+    height: auto;
+}
+
+#dadosReceita {
+    display: inline-block;   
+}
+
+.tipoGrau {
+    margin: auto;
+    padding: 1.5em;
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+}
+
+#lenteIndicada{
+    display: block;
+    padding: 1em;
+}
+
+.grauEsferico, .grauCilindrico {
+    margin: 1.5em;
+    padding: 1em;
+    width: 30%;
+}
+
+.produtos {
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+
+.modeloProduto {
+    display: inline;
+    text-align: center;
+    margin: auto;
+    padding: 1.5em;  
+}
+
+.invisivel {
+	display: none;
+}
